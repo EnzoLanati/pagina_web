@@ -1,31 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector('.wrapper');
-  const btnPopup = document.querySelector('#btnLogin-popup');
-  const formContainer = document.querySelector('#formContainer');
 
-  // HTML del formulario de registro
-  const formHTML = `
-      <div class="form-box register">
-          <h2>Regístrate</h2>
-          <form action="#">
-              <div class="input-box">
-                  <span class="icon"><ion-icon name="person"></ion-icon></span>
-                  <input type="text" required>
-                  <label>Usuario</label>
-              </div>
-              <div class="input-box">
-                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                  <input type="email" required>
-                  <label>Email</label>
-              </div>
-              <button type="submit" class="btn-login">Regístrate</button>
-          </form>
-      </div>
-  `;
+const btnLoginPopup = document.getElementById('btnLogin-popup');
+const loginModal = document.getElementById('loginModal');
+const loginContent = document.getElementById('loginContent');
+const modalClose = document.querySelector('.modal-close');
 
-  // Al hacer clic en "Registrarse", mostrar el formulario
-  btnPopup.addEventListener('click', () => {
-      formContainer.innerHTML = formHTML; // Cargar el formulario de registro
-      wrapper.classList.add('active'); // Mostrar el formulario
-  });
+// Evento para abrir el modal y cargar el contenido dinámico
+btnLoginPopup.addEventListener('click', function () {
+  // Mostrar el modal
+  loginModal.style.display = 'block';
+
+  // Cargar el formulario desde login.php usando fetch
+  fetch('login.php')
+    .then(response => {
+      if (!response.ok) throw new Error('Error al cargar el formulario');
+      return response.text();
+    })
+    .then(data => {
+      loginContent.innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      loginContent.innerHTML = '<p>Error al cargar el formulario. Intente nuevamente.</p>';
+    });
 });
+
+// Evento para cerrar el modal
+modalClose.addEventListener('click', function () {
+  loginModal.style.display = 'none';
+});
+

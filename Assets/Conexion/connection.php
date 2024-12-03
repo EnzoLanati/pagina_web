@@ -5,7 +5,10 @@ class Connection{
     private $pass='';
     private $name='pagina_web';
 
+    
+
     function makeConnection(){
+        
         
     }
 }

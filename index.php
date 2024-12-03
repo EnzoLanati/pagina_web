@@ -27,57 +27,30 @@
     <span class="icon-close">
         <ion-icon name="close"></ion-icon>
     </span>
-    <div class="form-box login active">
-        <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
-                <label>Contraseña</label>
-            </div>
-            <button type="submit" class="btn-login">Iniciar</button>
-        </form>
-    </div>
-
-    
-    <div class="form-box register">
-        <h2>Regístrate</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon"><ion-icon name="person"></ion-icon></span>
-                <input type="text" required>
-                <label>Usuario</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <button type="submit" class="btn-login">Regístrate</button>
-        </form>
-    </div>
 </div>
     
-    <footer style="background-color: #161616; color: white; padding: 20px 0; text-align: center;">
-        <div class="footer-content">
-            <div class="contact-info">
-                <p><strong>Dirección:</strong> Thiele 86, Gutiérrez, Maipú</p>
-                <p><strong>Teléfono:</strong> 2615101285</p>
-                <p><strong>Correo:</strong> vinotecalaparra@gmail.com</p>
-            </div>
-
-            <div class="social-media">
-                <a href="https://instagram.com/vinoteca_laparra/" target="_blank" style="text-decoration: none;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px; border-radius: 50%; margin-top: 10px;">
-                </a>
-            </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>CONTACTO</h3>
+            <strong>Dirección:</strong> 
+            <P>Thiele 86, Gutiérrez, Maipú</P>
+            <strong>Teléfono:</strong> 
+            <P>2615101285</P>
+            <strong>Correo:</strong> 
+            <P>vinotecalaparra@gmail.com</P>
+            <strong>Nuestra redes:</strong>
+            <br>
+            <a href="https://instagram.com/vinoteca_laparra/" target="_blank" style="text-decoration: none;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px; border-radius: 50%; margin-top: 10px;">
+            </a>
         </div>
-    </footer>
+        <div class="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.96888140243!2d-68.78859711819868!3d-32.954295606133876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c60c2a6b455%3A0xad2ca06b1af6c76e!2sThiele%2086%2C%20M5513%20Maip%C3%BA%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1733264131080!5m2!1ses!2sar"
+            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
