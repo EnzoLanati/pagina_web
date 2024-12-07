@@ -132,6 +132,7 @@
                     </div>
                     <div class="content-card-product">
                         <div class="stars">
+                            
                         </div>
                         <h3>portillo</h3>
                         <span class="add-cart">
@@ -142,21 +143,44 @@
                 </div>
             </div>
         </section>
-    
+
+        <section class="gallery">
+				<img
+					src="Assets/Images/gallery1.jpg"
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src="Assets/Images/gallery1.jpg"
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src="Assets/Images/gallery1.jpg"
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src="Assets/Images/gallery4.jpg"
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src="Assets/Images/gallery5.jpg"
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
 
 
     
 
-    <!-- Sección de concepto -->
-    <div class="container py-4">
-        <h2 class="text-center"> <span style="color: red;">VINOTECA</span></h2>
-        <p class="text-center">
-            <b>
-            Una vinoteca bien diseñada no solo asegura condiciones óptimas de temperatura y humedad, 
-            sino que también ofrece una experiencia única y sofisticada, donde cada copa cuenta una historia
-            y cada elección es un viaje sensorial. Bienvenido a un espacio donde el vino no solo se guarda, sino que se vive.
-            </b>
-        </p>
-        <img src="Assets/Images/vino.jpeg" class="img-fluid mx-auto d-block" alt="Vino">
-    </div>
-    </main>
+        <!-- Sección de concepto -->
+        <div class="container py-4">
+            <h2 class="text-center"> <span style="color: red;">VINOTECA</span></h2>
+            <p class="text-center">
+                <b>
+                Una vinoteca bien diseñada no solo asegura condiciones óptimas de temperatura y humedad, 
+                sino que también ofrece una experiencia única y sofisticada, donde cada copa cuenta una historia
+                y cada elección es un viaje sensorial. Bienvenido a un espacio donde el vino no solo se guarda, sino que se vive.
+                </b>
+            </p>
+            <img src="Assets/Images/vino.jpeg" class="img-fluid mx-auto d-block" alt="Vino">
+        </div>
+    </main>   
