@@ -1,76 +1,58 @@
-<header>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="logo_compañia">
-        <a class="navbar-item" href="index.php">
-          <img src="Assets/Images/logo.png" alt="logo de la compañia" class="logo-img">
-        </a>
+
+
+<div class="container-hero">
+  <div class="container hero">
+    <div class="customer-support">
+      <i class="fa-solid fa-headset"></i>
+      <div class="content-customer-support">
+        <span class="text">Soporte al Cliente</span>
+        <span class="number">261 510 1285</span>
       </div>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+    </div>
+    
+    <div class="container-logo"> 
+      <a href="index.php">
+        <img class="logo-header" src="Assets/Images/logo.png" alt="logo del sitio" >
       </a>
     </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Inicio
-        </a>
-
-        <a class="navbar-item">
-          Categorías
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Más
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Licores
-            </a>
-            <a class="navbar-item is-selected">
-              Vinos
-            </a>
-            <a class="navbar-item">
-              Contacto
-            </a>
-            <hr class="navbar-divider">
-          </div>
-        </div>
+    <div class="container-user">
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+      <div class="content-shopping-cart">
+        <span class="text">Carrito de Compras</span>
+        <span class="number">(0)</span>
       </div>
-      <div>
-        <input type="search" aria-label="Buscador">
-        <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
-      </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a id="btnLogin-popup" class="button is-light">
-            <ion-icon name="person-outline"></ion-icon>
-            </a>
-          </div>
-          <div class="carrito_compra">
-            <button><ion-icon name="cart-outline"></ion-icon></button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> 
+  </div>
+</div>
+
+<div class="container-navbar">
+  <nav class="navbar container">
+    <i class="fa-solid fa-bars"></i>
+    <ul class="menu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Vinos</a></li>
+      <li><a href="#">Licores</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <form class="search-form">
+      <input type="search" placeholder="Buscar...">
+      <button class="btn-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+    </form>
   </nav>
-</header>
-<!-- Modal para mostrar el formulario -->
+</div>
+
 <div id="loginModal" class="modal" style="display: none;">
   <div class="modal-background"></div>
   <div class="modal-content">
     <div id="loginContent" class="box">
-      <!-- Aquí se cargará el contenido de login.php -->
+      
     </div>
   </div>
   <button class="modal-close is-large" aria-label="close"></button>
 </div>
 
-<script src="Assets/js/script.js"></script>
+

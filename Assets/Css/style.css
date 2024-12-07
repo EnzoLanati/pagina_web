@@ -1,17 +1,227 @@
-h1{
-    background-color: rgb(28, 223, 22);
-    color: black;
+:root{
+    --primary-color: #900;
+    --background-color: #e90b0b;
 }
 
 /* Asegúrate de que el HTML y BODY ocupen toda la altura */
-html, body {
-    height: 100%;
+html{
+   font-size: 62.5%;
+   font-family: 'Poppins',sans-serif;
+}
+*{
     margin: 0;
     padding: 0;
-    background-color: white;
+    box-sizing: border-box;
+}
+
+/* UTILIDADES */
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.heading-1{
+    text-align: center;
+    font-weight:500;
+    font-size: 3rem;
+}
+
+/* HEADER */
+.container-hero{
+    background-color: var(--background-color);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    
+}
+.customer-support{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.customer-support i{
+    font-size: 3.3rem;
+}
+.content-customer-support{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-header{
+    border-radius: 50px;
+    width: 100px; 
+    height: auto;
+    border: 2px solid red; 
+}
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo i {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user{
+    font-size: 3rem;
+    color: #161616;
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-cart-shopping{
+    font-size: 3rem;
+    color: #161616;
+    padding-left: 1rem;
+}
+.content-shopping-cart{
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.container-navbar {
+    background-color: #161616; 
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navbar .fa-bars{
+    display: none;
+}
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size:  1.5rem; 
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a:hover::after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: #ec0e0e;
+}
+
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 4.4rem;
+    overflow: hidden;
+}
+.search-form input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: rgb(43, 41, 41);
+    cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button{
+    appearance: none;
+}
+.search-form .btn-search{
+    border: none;
+    background-color: #900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+.btn-search{
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-item {
+    color: white;
+}
+
+.navbar-item:hover {
+    color: #b08d57; 
+}
+
+.navbar-burger span {
+    background-color: white; 
+}
+
+/* Hover de la hamburguesa */
+.navbar-burger:hover span {
+    background-color: #b08d57; 
 }
 
 
+.navbar-dropdown {
+    background-color: #161616; 
+}
+
+.navbar-dropdown a {
+    color: white;
+}
+
+.navbar-dropdown a:hover {
+    background-color: #b08d57; /* Dorado suave al pasar el ratón */
+}
+img {
+    opacity: 1; /* Asegúrate de que no sea 0 */
+    visibility: visible; /* Asegúrate de que no esté oculta */
+}
+
+/* Login */
 .wrapper {
     position: relative;
     width: 400px;
@@ -193,71 +403,298 @@ html, body {
     text-decoration: underline;
 }
 
-.carousel-inner img {
-    width: 100px; /* Hace que las imágenes ocupen todo el ancho del contenedor */
-    height: 600px; /* Ajusta la altura de todas las imágenes a 400px */
-    object-fit: cover; /* Hace que las imágenes se ajusten sin distorsionarse */
-    border-radius: 8px; /* Redondea las esquinas de las imágenes */
-}
 
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 8px;
+
+/* BANNER */
+.banner{
+    background-image: url('../Images/copavino.jpg');
+    height: 75.5rem;
+    background-size:cover;
+    background-position:center;
+    
+ 
+}
+.content-banner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+
+}
+.content-banner p{
     color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.content-banner h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.container h2 {
-    font-size: 2rem;
+/* MAIN CONTENT */  
+.main-content{
+    background-color: #c77d40;
+} 
+
+/* FEACURES */
+.container-features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding: 2rem 0;
+}
+.card-feacture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
 }
 
-ion-icon {
+.card-feacture i{
+    font-size: 2.7rem;
     color: #900;
-    margin-bottom: 10px;
+}
+.feacture-conten{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feacture-content span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #161616;
+}
+
+.feacture-contetent p{
+    color: #777;
+    font-weight: 500;
+}
+
+/* CATEGORIAS */
+.top-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;  
+}
+
+.container-categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3rem
+}
+
+.card-category{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap:2rem;
+}
+.category-vinos{
+    background-image:linear-gradient(#00000080,#00000080),url(../Images/vinocategoria.jpg);
+    background-size:contain;
+    background-position: bottom;
+    background-repeat:no-repeat ;
+    background-color:white;
+
+}
+.category-licores{
+    background-image:linear-gradient(#00000080,#00000080),url(../Images/licores.jpg);
+    background-size:cover;
+    background-position: bottom;
+    background-repeat:no-repeat ;
+    background-color:transparent;
+
+}
+.category-gaseosas{
+    background-image:linear-gradient(#00000080,#00000080),url(../Images/gaseosa.png);
+    background-size:contain;
+    background-position: bottom;
+    background-repeat:no-repeat ;
+    background-color:white;
+}
+
+.card-category p{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-category p::after{
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.card-category span{
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-category span:hover{
+    color: #900;
+}
+
+
+/* Top Productos */
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 3rem;
+}
+.card-product{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img{
+    position: relative; 
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.content-card-product{
+    display: absolute;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,min-content);
+    row-gap: 1rem;
 }
 
 
 
-/* Barra de navegación con colores de vino */
-.navbar {
-    background-color: #161616; /* Rojo vino */
-    color: white;
+.card-product:hover .button-group{
+    z-index: 0;
+    right: -1rem;
 }
 
-.navbar-item {
-    color: white;
+.content-card-product h3{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.content-card-product h3:hover{
+    color: #900;
 }
 
-.navbar-item:hover {
-    color: #b08d57; /* Un dorado suave, para imitar la elegancia del vino */
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	position: absolute;
+	top: 0;
+	right: -3rem;
+	z-index: -1;
+	transition: all 0.4s ease;
 }
 
-.navbar-burger span {
-    background-color: white; /* Aseguramos que el icono de la hamburguesa sea visible */
+.button-group span {
+	border: 1px solid #900;
+	padding: 0.8rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
-/* Hover de la hamburguesa */
-.navbar-burger:hover span {
-    background-color: #b08d57; /* Cambio de color al pasar el ratón */
+.button-group span:hover {
+	background-color: #900;
 }
 
-/* Para la dropdown, usamos un color ligeramente más oscuro */
-.navbar-dropdown {
-    background-color: #161616; /* Un rojo más oscuro, para la dropdown */
+.button-group span i {
+	font-size: 1.5rem;
+	color: #900;
 }
 
-.navbar-dropdown a {
-    color: white;
+.button-group span:hover i {
+	color: #fff;
 }
 
-.navbar-dropdown a:hover {
-    background-color: #b08d57; /* Dorado suave al pasar el ratón */
-}
-img {
-    opacity: 1; /* Asegúrate de que no sea 0 */
-    visibility: visible; /* Asegúrate de que no esté oculta */
-  }
 
+
+.add-cart{
+    justify-self: start;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.add-cart:hover{
+    background-color: #900;
+}
+
+.add-cart i{
+    font-size: 1.5rem;
+    color: #900;
+}
+
+.add-cart:hover i{
+    color: #fff;
+}
+
+.content-card-product .price{
+    justify-self: end;
+	align-self: center;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.stars {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+}
+
+.stars i {
+	font-size: 1.3rem;
+	color: var(--primary-color);
+}
+
+
+/* Footer */
 .footer {
     background-color: #161616; /* Color de fondo oscuro */
     color: white;
@@ -270,8 +707,8 @@ img {
 }
   
 .footer-content {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
   
 .contact-info{
@@ -281,12 +718,25 @@ img {
     align-items: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
     max-width: 50%; /* Ajusta el ancho */
 }
+.copy{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    font-size: 2rem;
+}
+strong{
+    color: #900;
+}
+
+
 
 .contact-info p {
     margin: 5px 0;
     font-size: 1rem;
 }
-  
+ 
+
 .social-media a {
     margin-top: 10px;
 }
